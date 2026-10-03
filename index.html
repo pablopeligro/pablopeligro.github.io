@@ -124,7 +124,7 @@
 
         <!-- STATS -->
         <section class="container stats reveal" aria-label="Highlights">
-            <div class="stat"><span class="stat-num" data-count="9">0</span><span class="stat-label">Projects on GitHub</span></div>
+            <div class="stat"><span class="stat-num" data-count="12">0</span><span class="stat-label">Projects on GitHub</span></div>
             <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Programming languages</span></div>
             <div class="stat"><span class="stat-num" data-count="15">0</span><span class="stat-label">Technologies &amp; tools</span></div>
             <div class="stat"><span class="stat-num">UPM</span><span class="stat-label">Technical University of Madrid</span></div>
@@ -247,6 +247,7 @@
 
             <div class="filters reveal" role="tablist" aria-label="Filter projects">
                 <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+                <button class="filter" data-filter="geras" role="tab" aria-selected="false">GERAS</button>
                 <button class="filter" data-filter="embedded" role="tab" aria-selected="false">Embedded &amp; Real-Time</button>
                 <button class="filter" data-filter="ai" role="tab" aria-selected="false">Robotics &amp; AI</button>
                 <button class="filter" data-filter="net" role="tab" aria-selected="false">Networks &amp; Security</button>
@@ -254,6 +255,45 @@
             </div>
 
             <div class="project-grid">
+
+                <article class="project-card reveal" data-category="geras">
+                    <div class="project-media">
+                        <img src="images/GERAS_PORTADA.webp" alt="GERAS biometric bracelet" loading="lazy">
+                        <span class="project-tag">IoT Backend</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>🩺 GERAS: Remote Assistance Backend</h3>
+                        <p>Geriatric Embedded Remote Assistance and Safety. Backend that ingests biometric telemetry from a wearable bracelet over MQTT, evaluates clinical rules (falls, inactivity, SpO₂, heart rate) and escalates alerts through a REST API and Telegram.</p>
+                        <ul class="stack"><li>Python</li><li>FastAPI</li><li>MQTT</li><li>TimescaleDB</li><li>Docker</li></ul>
+                        <a class="card-link" href="https://github.com/pablopeligro/GERAS" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="geras">
+                    <div class="project-media">
+                        <img src="images/GERAS_APP_PORTADA.webp" alt="GERAS Android app" loading="lazy">
+                        <span class="project-tag">Android</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>📱 GERAS App: Caregiver Client</h3>
+                        <p>Android client for the GERAS system. Caregivers can see bracelet status and vital signs, acknowledge and resolve alerts, pair new devices and tune each person's clinical thresholds, with patient names kept only on the device for privacy.</p>
+                        <ul class="stack"><li>Kotlin</li><li>Jetpack Compose</li><li>Retrofit</li></ul>
+                        <a class="card-link" href="https://github.com/pablopeligro/gerasAPP" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="geras">
+                    <div class="project-media">
+                        <img src="images/GERAS_WEB.webp" alt="GERAS landing page" loading="lazy">
+                        <span class="project-tag">Web</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>🌐 GERAS Web: Landing Page</h3>
+                        <p>Bilingual (ES/EN) landing page presenting GERAS. A single self-contained page with scroll-story sections and hash routing, served by nginx inside a hardened Docker container.</p>
+                        <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>nginx</li><li>Docker</li></ul>
+                        <a class="card-link" href="https://github.com/pablopeligro/geras-frontend" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
 
                 <article class="project-card reveal" data-category="embedded">
                     <div class="project-media">

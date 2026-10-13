@@ -6,20 +6,6 @@
 
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    /* ---------- Theme toggle ---------- */
-    var themeToggle = document.getElementById('themeToggle');
-    function currentTheme() {
-        var t = root.getAttribute('data-theme');
-        if (t) return t;
-        return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-    }
-    root.setAttribute('data-theme', currentTheme());
-    themeToggle.addEventListener('click', function () {
-        var next = currentTheme() === 'dark' ? 'light' : 'dark';
-        root.setAttribute('data-theme', next);
-        try { localStorage.setItem('theme', next); } catch (e) {}
-    });
-
     /* ---------- Mobile menu ---------- */
     var menuToggle = document.getElementById('menuToggle');
     var nav = document.getElementById('nav');
